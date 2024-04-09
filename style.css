@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Garamond-Bold;
+    src: url(Cormorant_Garamond/CormorantGaramond-Bold.ttf);
+}
+@font-face {
+    font-family: Garamond-Light;
+    src: url(Cormorant_Garamond/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: Garamond-Regular;
+    src: url(Cormorant_Garamond/CormorantGaramond-Regular.ttf);
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 55%, rgb(44, 5, 5) 100%);
+    background-attachment: fixed;
+    font-family: Garamond-Light;
+}
+#title {
+    font-family: Garamond-Bold;
+    color: rgb(223, 33, 33);
+    width: 100%;
+    font-size: 10vh;
+    padding: 2vh;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    position: fixed;
+}
+#banner {
+    padding-top: 15vh;
+    width: 100%;
+}
+
+#songs-list {
+    color: white;
+    padding-inline: 10vw;
+    padding-top: 3vh;
+    padding-bottom: 20vh;
+}
+
+#artist-description {
+    color: white;
+    font-weight: lighter;
+    font-size: 3.3vh;
+    margin: 0;
+    padding-inline: 10vw;
+    padding-top: 3vh;
+    line-height: 200%;
+}
+
+#artist-name {
+    font-family: Garamond-Bold; 
+    color: red; 
+    font-size: larger;
+    text-decoration: underline;
+}
+
+#songs-grid {
+    /* background-color: rgba(0, 255, 255, 0.333); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.song-organizer{
+    width: 32%;
+    margin-block: 1vh;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.song-title {
+    text-decoration: none;
+    color:white;
+    font-size: 3.5vh;
+    transition: all .2s ease-in-out;
+}
+
+.song-title:hover {
+    color:rgb(182, 10, 10);
+}
+
+.song-cover {
+    width: 100%;
+    background-position: center;
+    background-size: auto;
+    border-radius: 10px;
+}
+
