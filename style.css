@@ -100,3 +100,9 @@ body {
     border-radius: 10px;
 }
 
+.flash-warning {
+    color: white;
+    font-family: Garamond-Bold;
+    font-size: 2vh;
+}
+

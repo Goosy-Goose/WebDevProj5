@@ -37,6 +37,13 @@ let jSON_songs_database = [
         "flash-warning": false,
     },
     {
+        "title": "Rasou",
+        "cover-art": "song-covers/rasou-thumbnail.jpg",
+        "link":"https://www.youtube.com/watch?v=7IUi0htUnuE",
+        "color": [219, 39, 99],
+        "flash-warning": true,
+    },
+    {
         "title": "Raven Haven",
         "cover-art": "song-covers/a-minus-in-the-sun-album-cover.jpg",
         "link":"https://www.youtube.com/watch?v=CrUcvgiXwCo",
@@ -70,7 +77,12 @@ function create_song_elem(incomingJSON){
     song_title.innerText = incomingJSON["title"];
     song_element.appendChild(song_title);
 
-
+    if (incomingJSON["flash-warning"]){
+        let flash_warning = document.createElement("P");
+        flash_warning.classList.add("flash-warning");
+        flash_warning.innerText = "*This video contains flashing lights";
+        song_element.appendChild(flash_warning);
+    }
 
     songs_grid.appendChild(song_element);   
 }
